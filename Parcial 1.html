@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="objetoAjax.js"></script>
+<!-- Ajax -->
+<script type="text/javascript" src="objetoAjax.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Parcial 1 Desarrollo Web 0905-13-2548</title>
+    <style>
+        label {
+            margin-bottom: 0.1em;
+            margin-top: 0.5em;
+        }
+        .container { margin: 50px auto; }
+    </style>
+</head>
+<body >
+
+    <!-- FORM -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 p-5 bg-white shadow-lg rounded">
+
+                <form id="register-form" method="post">
+                    <h2>Registro</h2>
+                    
+                    <hr>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input name="name1" id="name1" type="text" value="" class="form-control" placeholder="Ingrese su nombre"  required >
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido1">Apellido</label>
+                        <input name="apellido1" id="apellido1" type="text" value="" class="form-control" placeholder="Ingrese su apellido"  required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Género</label>
+                    <div class="col-md-8 form-check form-check-inline"></div>
+                        <label class="form-check-label col-md-4">
+                        <input name="gender" id="gender" type="radio" value="mujer" class="form-control" placeholder=""  required>
+                        Mujer</label> 
+                        <label class="form-check-label col-md-4">
+                        <input name="gender" id="gender" type="radio" value="hombre" class="form-control" placeholder=""  required>
+                        Hombre</label> 
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input name="edad" id="edad" type="number" value="" min="18" max="100" class="form-control" placeholder="Ingrese su edad"  required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input name="direccion" id="direccion" type="text" value="" class="form-control" placeholder="Ingrese su Dirección"  required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>
+                        <small id="direccionHelp" class="form-text text-muted">Ej: "Jutiapa", "Guatemala", "Quetzaltengango"</small>  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono1">Teléfono</label>
+                        <input name="telefono1" id="telefono1" type="tel" value=""  class="form-control" placeholder="Ingrese su número telefónico" maxlength="8" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>
+                        <small id="numberHelp" class="form-text text-muted">Número telefónico de uso confidencial</small>
+                        </div>
+
+                    <div class="form-group">
+                        <label for="username">Usuario</label>
+                        <input name="user" id="user" type="text" value="" class="form-control" placeholder="Ingrese un nombre de '@Usuario'" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo electrónico</label>
+                        <input name="email" id="email" type="email" value="" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>  
+                        <small id="emailHelp" class="form-text text-muted">Correo electrónico de uso confidencial</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input name="password" id="password" type="password" value=""  size="20" class="form-control" placeholder="Contraseña" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div> 
+                        <small id="passHelp" class="form-text text-muted">Recuerde utilizar símbolos, números y letras mayúsculas </small> 
+
+                        <label for="passwordConfirm">Confirme contraseña</label>
+                        <input name="confirm" id="confirm" type="password" value=""  size="20" class="form-control" placeholder="Confirme su Contraseña" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                        <div class="invalid-feedback">Complete el campo.</div>  
+                    </div>
+                   
+                    <input type="submit" class="btn btn-primary btn-block mt-5" value="Registrarme">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CODE -->
+      <!-- Load Validation JS -->
+      <script type="text/javascript" src="ValidacionFormulario.js"></script>
+      <script type="text/javascript">
+          let form = new Validation("register-form");
+          // Validation Functions
+          form.requireTextNombre("name1", 3, 20,  [" "], []);
+          form.requireTextApellido("apellido1", 2, 20, [" "], []);
+          form.requireTextDireccion("direccion", 2, 20, [" "], []);
+          form.requireTextUser("user", 5, 20, [" "], []);
+          form.requireEmail("email", 4, 30, [" "], []);
+          form.registerPassword("password", 6, 20, [" "], [], "confirm");
+      </script>
+    <br>
+    </br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 p-5 bg-white shadow-lg rounded">
+
+                <form id="register-form" method="post">
+    <div class="form-group">
+    <h2>Pulse el botón para ver u ocultar el archivo.</h2>
+    <p><input type="button" id="request" class="btn btn-primary btn-block mt-5" value="Ver Archivo" onclick="Ver()"/>
+        <div id="link"></div>
+    </div>
+    <p><div align="center"><img src="img/drive.jpg" width="300" height="250" alt="Video almacenado en Drive"></div>
+    <p><a href="https://drive.google.com/file/d/1XucuITuUuk8OFPrANRBXcm8SNiBqdZm-/view?usp=sharing" target="_blank">Ver Video.</a></p>
+    </div>
+  </body>
+  <script>
+    var btn = document.getElementById("request");
+    var bio = document.getElementById("link");
+
+    var request = new XMLHttpRequest();
+
+    request.onreadystatechange = function () {
+      if (request.readyState === 4) {
+        link.style.border = "1px solid #e8e8e8";
+        if (request.status === 200) {
+          link.innerHTML = request.responseText;
+        } else {
+          link.innerHTML =
+            "An error occurred during your request: " +
+            request.status +
+            " " +
+            request.statusText;
+        }
+      }
+    };
+
+    request.open("Get", "Link.txt");
+
+    btn.addEventListener("click", function () {
+      this.style.display = "none";
+      request.send();
+    });
+  </script>
+  </html>
